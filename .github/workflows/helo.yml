@@ -1,0 +1,16 @@
+name: Hello Pipeline
+
+on: push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code download karo
+        uses: actions/checkout@v4
+
+      - name: Hello bolo
+        run: echo "Hello Zaheer, round 1 ki pipeline chal gayi!"
+
+      - name: Files dikhao
+        run: ls
